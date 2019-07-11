@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="Medium Clap Animation"
+            android:padding="8dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <FrameLayout
+            android:layout_width="50dp"
+            android:layout_gravity="center|center_horizontal"
+            android:translationY="100dp"
+            android:visibility="invisible"
+            android:background="@drawable/clap_count_bg"
+            android:layout_above="@+id/clap_iv"
+            android:id="@+id/clap_count_frame"
+            android:layout_centerHorizontal="true"
+            android:layout_height="50dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:text="4+"
+                android:id="@+id/clap_count_tv"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="50dp"
+            android:src="@drawable/clap_icon"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/clap_iv"
+            android:layout_height="50dp"/>
+
+
+</RelativeLayout>
